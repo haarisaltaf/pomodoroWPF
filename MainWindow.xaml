@@ -5,8 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pomodoroWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Pomodoro Timer" Height="225" Width="450">
+    
+    <Grid Height="225" VerticalAlignment="Bottom">
+        <!-- Defining columns and rows -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock
+            x:Name="TimerTextBox"
+            Grid.Column="1"
+            Text="Pomodoro Timer"
+            FontSize="32"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Margin="0,0,0,30"
+        />
+
+        <!-- " x:Name="" "  Defines unique id for button -->
+        <Button
+            x:Name="StartStopButton"
+            Grid.Column="1"
+            Grid.Row="1"
+            Height="50"
+            Width="110"
+            Content="Start/Stop"
+            FontSize="20"
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Center"
+            Margin="0,0,0,20"
+            >
+        </Button>
 
     </Grid>
+    
 </Window>
